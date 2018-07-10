@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7F4850AA20F52B41004E6C08 /* EventBroker.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F4850A820F52B41004E6C08 /* EventBroker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F4850B120F52BC1004E6C08 /* EventBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4850B020F52BC1004E6C08 /* EventBroker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F4850A520F52B41004E6C08 /* EventBroker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventBroker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F4850A820F52B41004E6C08 /* EventBroker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventBroker.h; sourceTree = "<group>"; };
 		7F4850A920F52B41004E6C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4850B020F52BC1004E6C08 /* EventBroker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBroker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				7F4850A820F52B41004E6C08 /* EventBroker.h */,
 				7F4850A920F52B41004E6C08 /* Info.plist */,
+				7F4850B020F52BC1004E6C08 /* EventBroker.swift */,
 			);
 			path = EventBroker;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					7F4850A420F52B41004E6C08 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4850B120F52BC1004E6C08 /* EventBroker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +264,7 @@
 		7F4850AE20F52B41004E6C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,6 +274,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EventBroker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplexity.EventBroker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +292,7 @@
 		7F4850AF20F52B41004E6C08 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,6 +302,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = EventBroker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
